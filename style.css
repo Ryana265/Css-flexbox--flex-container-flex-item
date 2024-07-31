@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #c2b1b1;
+    padding: 10px;
+    height: 100vh;
+    /* To create a flex container, set the display property to flex or inline-flex. *//*our items are no longer stacked or top of another because flex is aligning our items on main axis */
+    display: flex;
+    flex-direction: row; /*row; if we set the flex direction to row our main axis will be horizontal */ 
+    justify-content:  center ;  /*center will center will center our items in the middle */
+    align-items: flex-start; /*align elements at the start of the cross axis */
+    flex-wrap: nowrap; /*if we set it to wrap our items are no longer trying to fit in one line */
+}
+.items{
+    background-color: rgb(62, 87, 88);
+    height: 300px;
+    width: 200px;
+    margin: 10px; 
+ } 
+.items-1{
+    background-color: rgb(156, 173, 173);
+    height: 300px;
+    width: 200px;
+    margin: 10px; 
+    /* flex-grow: 0; /*flex grow takes a unitless value and what it does allows the element to grow if it have enough space  */ 
+    /* flex-shrink: 0; /* how fast one item shrinks comparison to others  if i dont want one item to shrink i can set it as 0 now the item is refusing to shrink */
+    /* flex-basis: 300px;  /*if we want to over write the size with something else */
+    /* align-self: center;  /*if i want to align one individual item we can use align self */
+}
+
